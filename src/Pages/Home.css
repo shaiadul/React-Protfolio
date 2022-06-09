@@ -103,7 +103,7 @@ header .user img{
     width:17rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
     border:.7rem solid var(--yellow);
 }
 
@@ -142,18 +142,6 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background:var(--yellow);
 }
-
-/* #menu{
-    position: fixed;
-    top:2rem; right:2rem;
-    background:#333;
-    color:#fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    padding:1rem 1.5rem;
-    z-index: 1000;
-    display: none;
-} */
 
 .home{
     display: flex;
@@ -410,18 +398,22 @@ header .navbar ul li a:hover{
 }
 
 @media (max-width:991px){
+ 
 
-   header{
+    header img{
+        margin: 0 auto;
+    }
+   /* header{
        left:-120%;
-   }
+   }  */
 
-   #menu{
+   /* #menu{
        display: block;
-   }
+   } */
 
-   header.toggle{
+   /* header.toggle{
     left:0%;
-   }
+   } */
 
    body{
        padding:0;

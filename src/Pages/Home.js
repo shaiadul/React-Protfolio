@@ -1,4 +1,3 @@
-import React from 'react';
 import './Home.css'
 import saidul from '../images/owner.png'
 import project01 from '../images/project01.png'
@@ -9,100 +8,112 @@ import project05 from '../images/project05.png'
 import project06 from '../images/project06.png'
 import resume from '../images/Saiduls_Resume (1).pdf'
 import Icon from './Icon';
+// -------------------
+// import React, { useRef } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+// -----------------------
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// ------------------------------
 
 
 const Home = () => {
+    // email.js-sender
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_4amg05k', 'template_d4vimcc', form.current, 'xSWqd49Q1kRqnKXwD')
+        .then((result) => {
+            console.log(result.text);
+            toast.success("Thanks! Message sent successfully");
+        }, (error) => {
+            console.log(error.text);
+            toast.error("Something wrong! Try again");
+        });
+        
+    };
     return (
         <div>
-            <Icon/>
+            <Icon />
             <div className="drawer drawer-mobile">
                 <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
-                
-                <div className="drawer-side">
-                    <label htmlFor="dashboard-sidebar" ></label>
-                    <header>
 
+                <div className="drawer-side">
+                    <label htmlFor="dashboard-sidebar" class="drawer-overlay"></label>
+                    <header>
                         <div className="user">
                             <img className='mx=auto' src={saidul} alt="" />
                             <h3 className="name">Saidul Basar</h3>
                             <p className="post">front end developer</p>
                         </div>
-
                         <nav className="navbar">
-                            <ul>
+                            <ul className=''>
                                 <li><a href="#home">home</a></li>
                                 <li><a href="#about">about</a></li>
                                 <li><a href="#education">education</a></li>
-                                <li><a href="#portfolio">portfolio</a></li>
+                                <li><a href="#portfolio">projects</a></li>
                                 <li><a href="#contact">contact</a></li>
                             </ul>
                         </nav>
-
                     </header>
                 </div>
             </div>
 
-            {/* other section */}
-            {/* <!-- home section starts  --> */}
+            {/*--------------------
+            other section 
+            ---------------------*/}
 
+            {/* <!-- home section starts  --> */}
             <section className="home " id="home">
 
                 <h3>HI THERE !</h3>
                 <h1>I'M <span>Saiadul Basar</span></h1>
                 <p>If you are looking to build a Web Site with beautiful visuals and a few texts, you should definitely consider using the fullscreen carousel. It will give your page a modern touch and will for sure be a different portfolio that will catch the viewer's attention.
                 </p>
-                <a href={resume} download ><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
+                <a href={resume} download ><button className="btn"> download Resume <i className="fas fa-download"></i> </button></a>
 
 
             </section>
-
             {/* <!-- home section ends --> */}
+
             {/* <!-- about section starts  --> */}
-
             <section className="about" id="about">
-
                 <h1 className="heading"> <span>about</span> me </h1>
-
                 <div className="row">
-
                     <div className="info">
                         <h3> <span> name : </span> MD Saidul Basar </h3>
                         <h3> <span> age : </span> 21 </h3>
                         <h3> <span> qualification : </span> Hard Work </h3>
                         <h3> <span> post : </span> front end developer </h3>
                         <h3> <span> language : </span> Bangla | English </h3>
-                        {/* <!-- <a href="#"><button className="btn"> download CV <i className="fas fa-download"></i> </button></a> --> */}
                     </div>
-
                     <div className="counter">
-
                         <div className="box">
                             <span>2+</span>
                             <h3>years of experience</h3>
                         </div>
-
                         <div className="box">
                             <span>13+</span>
                             <h3>porject completed</h3>
                         </div>
-
                         <div className="box">
                             <span>30+</span>
                             <h3>happy clients</h3>
                         </div>
-
                         <div className="box">
                             <span>9+</span>
                             <h3>awards won</h3>
                         </div>
-
                     </div>
-
                 </div>
-
             </section>
-
             {/* <!-- about section ends --> */}
+
+
+
             {/* <!-- education section starts  --> */}
 
             <section className="education" id="education">
@@ -167,7 +178,7 @@ const Home = () => {
                 <div className="box-container">
 
                     <div className="box">
-                    <a href="https://assignment-ten-2cf19.web.app/"><img src={project01} alt="" /></a>
+                        <a href="https://assignment-ten-2cf19.web.app/"><img src={project01} alt="" /></a>
                     </div>
 
                     <div className="box">
@@ -183,7 +194,7 @@ const Home = () => {
                     </div>
 
                     <div className="box">
-                    <a href="https://assignment-nine-090.netlify.app/home"><img src={project05} alt="" /></a>
+                        <a href="https://assignment-nine-090.netlify.app/home"><img src={project05} alt="" /></a>
                     </div>
 
                     <div className="box">
@@ -215,24 +226,25 @@ const Home = () => {
 
                     </div>
 
-                    <form action="">
-        
-                        <input type="text" placeholder="name" className="box"/>
-                            <input type="email" placeholder="email" className="box"/>
-                                <input type="text" placeholder="project" className="box"/>
-                                    <textarea name="" id="" cols="30" rows="10" className="box message" placeholder="message"></textarea>
-                                    <button type="submit" className="btn"> send <i className="fas fa-paper-plane"></i> </button>
+                    <form ref={form} onSubmit={sendEmail} action="">
 
-                                </form>
+                        <input type="text" name='name' placeholder="name" className="box" />
+                        <input type="email" name='email' placeholder="email" className="box" />
+                        <input type="text" name='project' placeholder="project" className="box" />
+                        <textarea name="message" id="" cols="30" rows="10" className="box message" placeholder="message"></textarea>
+                        <button type="submit" className="btn"> send <i className="fas fa-paper-plane"></i> </button>
 
-                            </div>
+                    </form>
 
-                        </section>
-
-
-                        {/* -------------- */}
                 </div>
-                );
+
+            </section>
+
+
+            {/* -------------- */}
+            <ToastContainer />
+        </div>
+    );
 };
 
-                export default Home;
+export default Home;
