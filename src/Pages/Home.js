@@ -7,6 +7,7 @@ import project03 from '../images/project03.png'
 import project04 from '../images/project04.png'
 import project05 from '../images/project05.png'
 import project06 from '../images/project06.png'
+import resume from '../images/Saiduls_Resume (1).pdf'
 import Icon from './Icon';
 
 
@@ -50,7 +51,7 @@ const Home = () => {
                 <h1>I'M <span>Saiadul Basar</span></h1>
                 <p>If you are looking to build a Web Site with beautiful visuals and a few texts, you should definitely consider using the fullscreen carousel. It will give your page a modern touch and will for sure be a different portfolio that will catch the viewer's attention.
                 </p>
-                <a href="#" ><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
+                <a href={resume} download ><button className="btn"> download CV <i className="fas fa-download"></i> </button></a>
 
 
             </section>
@@ -65,7 +66,7 @@ const Home = () => {
                 <div className="row">
 
                     <div className="info">
-                        <h3> <span> name : </span> shaikh anas </h3>
+                        <h3> <span> name : </span> MD Saidul Basar </h3>
                         <h3> <span> age : </span> 21 </h3>
                         <h3> <span> qualification : </span> Hard Work </h3>
                         <h3> <span> post : </span> front end developer </h3>

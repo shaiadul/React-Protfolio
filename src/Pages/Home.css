@@ -2,7 +2,7 @@
 
 :root{
     /* --yellow:#f9ca24; */
-    --yellow:#d7fb0a;
+    --yellow:#ff1a0a;
 }
 /* one !mportent */
 .drawer{
@@ -439,9 +439,9 @@ header .navbar ul li a:hover{
 
 @media (max-width:400px){
 
-    header{
+    /* header{
         width: 100vw;
-    }
+    } */
 
     .heading{
         margin:0 3rem;
