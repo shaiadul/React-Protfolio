@@ -1,7 +1,15 @@
 import React from 'react';
 import './Home.css'
 import saidul from '../images/owner.png'
+import project01 from '../images/project01.png'
+import project02 from '../images/project02.png'
+import project03 from '../images/project03.png'
+import project04 from '../images/project04.png'
+import project05 from '../images/project05.png'
+import project06 from '../images/project06.png'
 import Icon from './Icon';
+
+
 const Home = () => {
     return (
         <div>
@@ -158,27 +166,27 @@ const Home = () => {
                 <div className="box-container">
 
                     <div className="box">
-                        <img src="images/img1.jpg" alt="" />
+                    <a href="https://assignment-ten-2cf19.web.app/"><img src={project01} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <img src="images/img2.jpg" alt="" />
+                        <a href="https://walton-pc.web.app/"><img src={project02} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <img src="images/img3.jpg" alt="" />
+                        <a href="https://assignment-11-solve-link.web.app/"><img src={project03} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <img src="images/img4.jpg" alt="" />
+                        <a href="https://romantic-color.netlify.app/"><img src={project04} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <img src="images/img5.jpg" alt="" />
+                    <a href="https://assignment-nine-090.netlify.app/home"><img src={project05} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <img src="images/img6.jpg" alt="" />
+                        <a href="https://assignment-three96.netlify.app/#home"><img src={project06} alt="" /></a>
                     </div>
 
                 </div>
@@ -198,10 +206,10 @@ const Home = () => {
                         <h3 className="title">contact info</h3>
 
                         <div className="info">
-                            <h3> <i className="fas fa-envelope"></i> shaikh@gmail.com </h3>
-                            <h3> <i className="fas fa-phone"></i> +123-456-7890 </h3>
+                            <h3> <i className="fas fa-envelope"></i> mdsaidulbasar404@gmail.com </h3>
+                            <h3> <i className="fas fa-phone"></i> +880-1740-673877 </h3>
                             <h3> <i className="fas fa-phone"></i> +111-222-3333 </h3>
-                            <h3> <i className="fas fa-map-marker-alt"></i> mumbai, india - 400104. </h3>
+                            <h3> <i className="fas fa-map-marker-alt"></i> Dhaka-1212 , Bangladesh </h3>
                         </div>
 
                     </div>
