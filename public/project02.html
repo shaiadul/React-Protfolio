@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-two</title>
+    <!-- --------- -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.849);
+        }
+
+        .title {
+            color: rgb(158, 215, 227);
+            text-align: center;
+        }
+
+        .section-img {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            border: 3px solid aliceblue;
+        }
+        
+        .section-text{
+            color: azure;
+            margin: 4px 3px;
+        }
+        .section-text button{
+            background-color: rgb(158, 215, 227);
+            padding: 5px;
+            font-weight: 900;
+            border-radius: 15px;
+        }
+        .section-text button a{
+            text-decoration: none;
+            color: black;
+        }
+        .section-text button a:hover{
+            color: rgb(43, 41, 41);
+        }
+        .section-text button:hover{
+            background-color: rgb(205, 219, 222);
+        }
+        @media (max-width:400px) {
+
+            .section-img{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+    <!------------- -->
+</head>
+
+<body>
+    <h1 class="title">Project Name Is WaltonPc</h1>
+    <section class="section-img">
+        <!-- div one -->
+        
+        <div>
+            <img src="https://i.ibb.co/W2v1ydH/project02-01.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/bNr09Tt/project02-02.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/hXWgLhh/project02-03.png" alt="">
+        </div>
+    </section>
+    <!--article section -->
+    <section class="section-text">
+        <h4>This is full Stack milestone project for mine, personal practice project . here an company who production pc parts manufacturing in factory ! try to simple UI / UX for this site , try to best uses technology for this project . use update firebase authentication tools for this project !</h4>
+        <ul>
+            <li>WaltonPc is Manufacturing Pc Parts/Tools for Local Marketing.</li>
+            <li>Verify user can order for her local company, and manage her products (quantity, delete items, adds etc) with good UX.</li>
+            <li>Admin dashboard added for control this site management, Admin can add products, delete products, make another Admin. ( Admin Email: user@gmail.com Pass: 123456)</li>
+            <li>spend some time for thinking how to do it and what technology used</li>
+            <li>Mack a Booking page private route redirects to the login page if the user is not logged in.</li>
+            <li>uses technology and library for this project, tailwind css daisyUi React js Express js, node js, mongodb, react query, toastify, firebase hook, react counter.
+        </ul>
+
+        <button ><a target="_blank" href="https://walton-pc.web.app/">Live Site</a></button> <Button><a target="_blank" href="https://github.com/shaiadul/waltonPc-client">Client Code</a></Button><button><a target="_blank" href="https://github.com/shaiadul/waltonPc-server">Server Code</a></Button>
+
+    </section>
+</body>
+
+</html>

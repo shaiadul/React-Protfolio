@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Three</title>
+    <!-- --------- -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.849);
+        }
+
+        .title {
+            color: rgb(158, 215, 227);
+            text-align: center;
+        }
+
+        .section-img {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            border: 3px solid aliceblue;
+        }
+        
+        .section-text{
+            color: azure;
+            margin: 4px 3px;
+        }
+        .section-text button{
+            background-color: rgb(158, 215, 227);
+            padding: 5px;
+            font-weight: 900;
+            border-radius: 15px;
+        }
+        .section-text button a{
+            text-decoration: none;
+            color: black;
+        }
+        .section-text button a:hover{
+            color: rgb(43, 41, 41);
+        }
+        .section-text button:hover{
+            background-color: rgb(205, 219, 222);
+        }
+        @media (max-width:400px) {
+
+            .section-img{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+    <!------------- -->
+</head>
+
+<body>
+    <h1 class="title">Project Name Is Envo||DB</h1>
+    <section class="section-img">
+        <!-- div one -->
+        
+        <div>
+            <img src="https://i.ibb.co/TmRM1G2/project03-02.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/KhnwH0y/project03-03.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/C1vrYgh/project03-01.png" alt="">
+        </div>
+    </section>
+    <!--article section -->
+    <section class="section-text">
+        <h4>Getting Started with Envo||DB full stack React Application . with backent uses node.js and for database is mongodb uses in this project ! for authenticaton syestem use firebase . this is simple firebase login and resister work , heardly i use jwt (thas call json web token ) for identification for every single user . this is an inverntory management web site , ther an user or manager can upload data and it is save database , user can dlelte and delevery any single products in her stock . now i teal some step how to start and finally finish this work !!!</h4>
+        <ul>
+            <li>Stock House Management Website.</li>
+            <li>An stock Manager can update their product, as like delete, delivery ( decrees quantity by 1 when delivering any products ).</li>
+            <li>Authorization system, so that every single user must verify her email fast. JWT token including for data security.</li>
+            <li>spend some time for thinking how to do it and what technology used</li>
+            <li>style an login page and use firebase for authentication. (use firebase hook !!)</li>
+            <li>uses technology and library for this project, firebase hook, toastify, tailwind css daisyUi React js Express js, node js, mongodb.</li>
+        </ul>
+
+        <button ><a target="_blank" href="https://assignment-11-solve-link.web.app/">Live Site</a></button> <Button><a target="_blank" href="https://github.com/shaiadul/envodb-client">Client Code</a></Button><button><a target="_blank" href="https://github.com/shaiadul/envodb-server">Server Code</a></Button>
+
+    </section>
+</body>
+
+</html>

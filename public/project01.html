@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-One</title>
+    <!-- --------- -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.849);
+        }
+
+        .title {
+            color: rgb(158, 215, 227);
+            text-align: center;
+        }
+
+        .section-img {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            border: 3px solid aliceblue;
+        }
+        
+        .section-text{
+            color: azure;
+            margin: 4px 3px;
+        }
+        .section-text button{
+            background-color: rgb(158, 215, 227);
+            padding: 5px;
+            font-weight: 900;
+            border-radius: 15px;
+        }
+        .section-text button a{
+            text-decoration: none;
+            color: black;
+        }
+        .section-text button a:hover{
+            color: rgb(43, 41, 41);
+        }
+        .section-text button:hover{
+            background-color: rgb(205, 219, 222);
+        }
+        @media (max-width:400px) {
+
+            .section-img{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+    <!------------- -->
+</head>
+
+<body>
+    <h1 class="title">Project Name Is EnoLve</h1>
+    <section class="section-img">
+        <!-- div one -->
+        <div>
+            <img src="https://i.ibb.co/khNG4rV/project01-02.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/R7xh3mg/project01-03.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/YR598ZP/project01-01.png" alt="">
+        </div>
+    </section>
+    <!--article section -->
+    <section class="section-text">
+        <h4>Description: this is my fast Morden dynamic site with react.js . few day ago i just started to learn react.js . this site for an individual who provides services and service is gym or fitness . this type of project is medium but i also add authentication on this project . fast i divided some section in this project and note it . below make some point thats way i used to do this projects . and it help me finish this project easy and simply .</h4>
+        <ul>
+            <li>An Gym trainer who serves individuals in her organization.</li>
+            <li>Data Store on JSON file ( dynamically ). A user can be booking his order after Login or Signup.</li>
+            <li>When the user clicks “ Booking ”, Open a single id page that shows only this item's information.</li>
+            <li>try find out for an individual who provides services</li>
+            <li>Mack a Chackout page private route redirects to the login page if the user is not logged in.</li>
+            <li>Show 3 items in home of services and full data show off services</li>
+        </ul>
+
+        <button ><a target="_blank" href="https://assignment-ten-2cf19.web.app/">Live Site</a></button> <Button><a target="_blank" href="https://github.com/shaiadul/envolve-client">GitHub Code</a></Button>
+    </section>
+</body>
+
+</html>

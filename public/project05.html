@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-five</title>
+    <!-- --------- -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.849);
+        }
+
+        .title {
+            color: rgb(158, 215, 227);
+            text-align: center;
+        }
+
+        .section-img {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px;
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            border: 3px solid aliceblue;
+        }
+        
+        .section-text{
+            color: azure;
+            margin: 4px 3px;
+        }
+        .section-text button{
+            background-color: rgb(158, 215, 227);
+            padding: 5px;
+            font-weight: 900;
+            border-radius: 15px;
+        }
+        .section-text button a{
+            text-decoration: none;
+            color: black;
+        }
+        .section-text button a:hover{
+            color: rgb(43, 41, 41);
+        }
+        .section-text button:hover{
+            background-color: rgb(205, 219, 222);
+        }
+        @media (max-width:400px) {
+
+            .section-img{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+    <!------------- -->
+</head>
+
+<body>
+    <h1 class="title">Project Name Is RouterDom</h1>
+    <section class="section-img">
+        <!-- div one -->
+        
+        <div>
+            <img src="https://i.ibb.co/k8TqH1n/project05-02.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/fkxD0RD/project05-03.png" alt="">
+        </div>
+        <div>
+            <img src="https://i.ibb.co/MZpLL3S/project05-01.png" alt="">
+        </div>
+    </section>
+    <!--article section -->
+    <section class="section-text">
+        <h4>This is just example of react router dom . SPA is best modern solution for browsing .In this site uses react router with latest version, and added slice that part of data for needed.Now Single page application now popular feature of modern js technology .</h4>
+        <ul>
+            <li>color experience is good</li>
+            <li>slice 3 data for home page</li>
+            <li>if you go to reviews route you can not see refresh your page and see all reviews .</li>
+            <li>Some important block Part</li>
+            <li>Adding exrta navigation bar here you can add another invention based on your needed</li>
+            <li>uses technology and library for this project, React Router, React router dom, Jsx, Bootstrap , CSS-3.</li>
+        </ul>
+
+        <button ><a target="_blank" href="https://assignment-nine-090.netlify.app/">Live Site</a></button> <Button><a target="_blank" href="https://github.com/shaiadul/assignment-copy-9">Client Code</a></Button>
+
+    </section>
+</body>
+
+</html>

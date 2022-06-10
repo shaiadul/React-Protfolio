@@ -15,6 +15,7 @@ import emailjs from '@emailjs/browser';
 // -----------------------
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Job from './Job'
 // ------------------------------
 
 
@@ -173,32 +174,32 @@ const Home = () => {
 
             <section className="portfolio" id="portfolio">
 
-                <h1 className="heading"> My <span>Projects</span> </h1>
+                <h1 className="heading"><span>Projects</span> </h1>
 
                 <div className="box-container">
 
                     <div className="box">
-                        <a href="https://assignment-ten-2cf19.web.app/"><img src={project01} alt="" /></a>
+                        <a target="_blank" href="project01.html"><img src={project01} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <a href="https://walton-pc.web.app/"><img src={project02} alt="" /></a>
+                        <a target="_blank" href="project02.html"><img src={project02} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <a href="https://assignment-11-solve-link.web.app/"><img src={project03} alt="" /></a>
+                        <a target="_blank" href="project03.html"><img src={project03} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <a href="https://romantic-color.netlify.app/"><img src={project04} alt="" /></a>
+                        <a target="_blank" href="project04.html"><img src={project04} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <a href="https://assignment-nine-090.netlify.app/home"><img src={project05} alt="" /></a>
+                        <a target="_blank" href="project05.html"><img src={project05} alt="" /></a>
                     </div>
 
                     <div className="box">
-                        <a href="https://assignment-three96.netlify.app/#home"><img src={project06} alt="" /></a>
+                        <a target="_blank" href="project06.html"><img src={project06} alt="" /></a>
                     </div>
 
                 </div>
