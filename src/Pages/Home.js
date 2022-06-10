@@ -54,9 +54,10 @@ const Home = () => {
                             <ul className=''>
                                 <li><a href="#home">home</a></li>
                                 <li><a href="#about">about</a></li>
-                                <li><a href="#education">education</a></li>
+                                {/* <li><a href="#education">education</a></li> */}
                                 <li><a href="#portfolio">projects</a></li>
                                 <li><a href="#contact">contact</a></li>
+                                <li><a target="_blank" href="Blog.html">Blogs</a></li>
                             </ul>
                         </nav>
                     </header>
@@ -72,7 +73,7 @@ const Home = () => {
 
                 <h3>HI THERE !</h3>
                 <h1>I'M <span>Saiadul Basar</span></h1>
-                <p>If you are looking to build a Web Site with beautiful visuals and a few texts, you should definitely consider using the fullscreen carousel. It will give your page a modern touch and will for sure be a different portfolio that will catch the viewer's attention.
+                <p>If you are looking to build a Web Site with beautiful visuals and a few texts, you should definitely consider using the fullscreen carousel. It will give your page a modern touch and will for sure be a different website that will catch the viewer's attention.
                 </p>
                 <a href={resume} download ><button className="btn"> download Resume <i className="fas fa-download"></i> </button></a>
 
@@ -83,6 +84,7 @@ const Home = () => {
             {/* <!-- about section starts  --> */}
             <section className="about" id="about">
                 <h1 className="heading"> <span>about</span> me </h1>
+                <h1 className='about-heading-me'>I am an expert FrontEnd developer; I have been working since 2021. I worked for five different Project. My expertise in HTML, CSS, js, ReactJS, MatarialUI, Express.js, Nodejs . I will try learn new technology every day. As a developer through and through, and I’ll always be ‘hands-on’. However, in the next 5 - 10 years I’d like to take on roles with greater responsibility.</h1>
                 <div className="row">
                     <div className="info">
                         <h3> <span> name : </span> MD Saidul Basar </h3>
@@ -93,19 +95,19 @@ const Home = () => {
                     </div>
                     <div className="counter">
                         <div className="box">
-                            <span>2+</span>
+                            <span>1+</span>
                             <h3>years of experience</h3>
                         </div>
                         <div className="box">
-                            <span>13+</span>
+                            <span>15+</span>
                             <h3>porject completed</h3>
                         </div>
                         <div className="box">
-                            <span>30+</span>
+                            <span>8+</span>
                             <h3>happy clients</h3>
                         </div>
                         <div className="box">
-                            <span>9+</span>
+                            <span>3+</span>
                             <h3>awards won</h3>
                         </div>
                     </div>
@@ -174,7 +176,7 @@ const Home = () => {
 
             <section className="portfolio" id="portfolio">
 
-                <h1 className="heading"><span>Projects</span> </h1>
+                <h1 className="heading"><span>Projects</span> <small className='sm-text-title font-serif font-extrabold'>( Click project to show details )</small> </h1>
 
                 <div className="box-container">
 

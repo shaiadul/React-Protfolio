@@ -2,7 +2,7 @@
 
 :root{
     /* --yellow:#f9ca24; */
-    --yellow:#ff8800;
+    --yellow:#ffc800d8;
 }
 /* one !mportent */
 .drawer{
@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#111;
+    background:rgba(112, 213, 101, 0.481);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -89,7 +89,7 @@ header{
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#42413e34;
+    background:#423f3e97;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +177,12 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
     padding:1rem 0;
 }
-
+.about-heading-me{
+    font-size: 18px;
+    margin: 8px 20px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.823);
+}
 .about .row .info{
     flex:1 1 48rem;
     padding:2rem 1rem;
@@ -270,7 +275,9 @@ header .navbar ul li a:hover{
     color:#fff;
     background:var(--yellow);
 }
-
+.sm-text-title{
+    font-size: 15px;
+}
 .portfolio .box-container{
     display: flex;
     align-items: center;
