@@ -129,42 +129,42 @@ const Home = () => {
                         <i className="fas fa-graduation-cap"></i>
                         <span>2017</span>
                         <h3>Web Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+                        <p>Soft Lakes Company LTD <br /> Web Designing Mission 2017 <br /> Bangladesh Youth Development<br /> Student ID: S-45, Great A+</p>
+                    </div>
+
+                    <div className="box">
+                        <i className="fas fa-graduation-cap"></i>
+                        <span>2022</span>
+                        <h3>front end development</h3>
+                        <p>Programming Hero Community <br />Complete Web Development Course With Jhankar Mahbub <br />|| Batch-05 || WEB5-0435 ||</p>
                     </div>
 
                     <div className="box">
                         <i className="fas fa-graduation-cap"></i>
                         <span>2017</span>
-                        <h3>front end development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
-                    </div>
-
-                    <div className="box">
-                        <i className="fas fa-graduation-cap"></i>
-                        <span>2018</span>
-                        <h3>front end development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+                        <h3>Basic Computer Course</h3>
+                        <p>Easy Computer Training Center <br /> computer fundamental , office application, management<br /> student id: YDD/819/HO-16102</p>
                     </div>
 
                     <div className="box">
                         <i className="fas fa-graduation-cap"></i>
                         <span>2019</span>
-                        <h3>front end development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+                        <h3>SSC</h3>
+                        <p>Idilpur Secondary pilot School <br /> Reg- 1410624467 Roll- 370222 <br /> Regular | Humanities <br /> GPA : 4.00</p>
                     </div>
 
                     <div className="box">
                         <i className="fas fa-graduation-cap"></i>
-                        <span>2020</span>
-                        <h3>front end development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+                        <span>2019</span>
+                        <h3>HSC</h3>
+                        <p>Samsur Rahman College, Idilpur<br /> Reg- 1410624467 Roll- 273621 <br /> Regular | Humanities <br /> GPA : 4.50</p>
                     </div>
 
                     <div className="box">
                         <i className="fas fa-graduation-cap"></i>
-                        <span>2021</span>
-                        <h3>front end development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. Id autem provident laborum quae, distinctio eaque temporibus!</p>
+                        <span>2022</span>
+                        <h3>Honors</h3>
+                        <p>Govt titumir college, Dhaka<br /> Reg- 1410624467 Roll- 122 <br /> Regular | Economics <br /> CGPA : -----</p>
                     </div>
 
                 </div>
