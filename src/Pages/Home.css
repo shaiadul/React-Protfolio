@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:rgba(112, 213, 101, 0.481);
+    background:#181424;
     overflow-x: hidden;
     padding-left: 35rem;
 }
